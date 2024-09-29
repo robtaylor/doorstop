@@ -536,6 +536,7 @@ def _publish(subs, shared):
         help="do not include levels on heading and non-heading or non-heading items",
     )
     sub.add_argument("--template", help="template file", default=None)
+    sub.add_argument("--index", help="Generate top level index (when producing markdown).", action="store_false")
 
 
 if __name__ == "__main__":
