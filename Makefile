@@ -81,7 +81,7 @@ endif
 
 RANDOM_SEED ?= $(shell date +%s)
 
-PYTEST_OPTIONS := -n auto --doctest-modules
+PYTEST_OPTIONS := -n auto --dist loadfile --doctest-modules
 ifndef DISABLE_COVERAGE
 PYTEST_OPTIONS += --cov=$(PACKAGE) --cov-report=html --cov-report=term-missing
 endif
